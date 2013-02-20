@@ -94,6 +94,6 @@ set clipboard=unnamedplus
 
 " Hide hidden files in the vim file viewer (can hit a to show hidden files)
 let g:netrw_list_hide='^\.,\~$*'
-set wildignore+=.git,blaze-bin,blaze-out,blaze-google3,blaze-testlogs,blaze-genfiles
+set wildignore+=.git,
 
 let mapleader=","
