@@ -10,8 +10,11 @@ set fillchars+=vert:│
 " Default window size. This is actually kind of annoying when in a console
 " instead of gvim, maybe this is worth changing to be conditional.
 "set columns=200
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp  " Where to place swap files
+
+set autoread
+set noswapfile
+set nobackup
+
 set hlsearch " Highlight search terms
 set incsearch " Incrementally highlight terms (just one while typing?)
 
