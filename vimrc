@@ -11,9 +11,11 @@ set fillchars+=vert:│
 " instead of gvim, maybe this is worth changing to be conditional.
 "set columns=200
 
-set autoread
-set noswapfile
-set nobackup
+" set autoread
+" set noswapfile
+" set nobackup
+
+" set nocp
 
 set hlsearch " Highlight search terms
 set incsearch " Incrementally highlight terms (just one while typing?)
@@ -85,6 +87,10 @@ set guitablabel=%-0.25t%M
 nnoremap ' `
 nnoremap ` '
 
+" Set ; to : so that shift does not need to be pressed for the cmd line
+" Note that nnoremap to swap these causes plugins to fail. I'd like an alternate key for repeat t/f
+map ; :
+
 " Improved % key jumping (still want to figure out how to be able to use 
 " arbitrary characters for di / ci / da / ca)
 " runtime is the same as source except relative to the vim directory
@@ -97,6 +103,6 @@ set clipboard=unnamedplus
 
 " Hide hidden files in the vim file viewer (can hit a to show hidden files)
 let g:netrw_list_hide='^\.,\~$*'
-set wildignore+=.git,
+set wildignore+=.git
 
 let mapleader=","
