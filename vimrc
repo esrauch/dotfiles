@@ -13,11 +13,11 @@ set fillchars+=vert:│
 " instead of gvim, maybe this is worth changing to be conditional.
 "set columns=200
 
-" set autoread
-" set noswapfile
-" set nobackup
+set autoread
+set noswapfile
+set nobackup
 
-" set nocp
+set nocp
 
 set hlsearch " Highlight search terms
 set incsearch " Incrementally highlight terms (just one while typing?)
