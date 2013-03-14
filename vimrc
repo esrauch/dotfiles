@@ -1,3 +1,5 @@
+" .vimrc: "source ~/dotfiles/vimrc"
+
 set number numberwidth=1
 " Tab/space settings and auto indent
 set ts=2 sw=2 sta sts=2 et ai
